@@ -1,9 +1,0 @@
-steps:
-- id: 'build image'
-  name: 'asia.gcr.io/statscope/cloudbuild'
-  args: ['build', '-t', 'asia.gcr.io/statscope/cloudbuild', '.']
-  timeout: 1000s
-- id: 'push to container registry'
-  name: 'asia.gcr.io/statscope/cloudbuild'
-  args: ['push', 'asia.gcr.io/statscope/cloudbuild']
-images: [asia.gcr.io/statscope/cloudbuild]
