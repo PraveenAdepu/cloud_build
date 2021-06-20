@@ -25,6 +25,8 @@ USER appuser
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
+ENTRYPOINT ["python"]
+
 # docker build --tag sentiment .
 # docker images
 # docker run -p 5000:5000 -t -i sentiment
